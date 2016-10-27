@@ -1,2 +1,5 @@
 .pioenvs
+.piolibdeps
 libs
+data/bundle.js
+data/bundle.js.map
