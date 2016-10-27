@@ -1,4 +1,6 @@
 
+<img src='https://travis-ci.org/ronanj/esp-captive-app.svg?branch=master'>
+
 This is a captive application demo for the ESP8266 / Gizwits module
 
 # Captive Application
