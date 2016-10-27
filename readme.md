@@ -5,9 +5,9 @@ This is a captive application demo for the ESP8266 / Gizwits module
 
 # Captive Application
 
-The idea is you can use an ESP8266 as an access point, to which, when logged in, 
-the user can start a standalone web application and interact (via web-sockets) with the ESP as well
-as all other devices conencted to the ESP.
+The idea is to use an ESP8266 as an access point, to which, when logged in, 
+users can start a standalone web application and interact (via web-sockets) with the ESP as well
+as other devices conencted to the same ESP.
 
 By nature, a captive application is a web application which runs in the captive portal login.
 
