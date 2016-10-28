@@ -4,7 +4,6 @@ var d3 = require("d3-selection");
 import {ctrl} from "./ctrl";
 import {Led} from "./led"
 import {Diode} from "./diode"
-import * as d3t from "d3-selection"
 
 export class UI
 {
