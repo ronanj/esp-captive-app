@@ -27,5 +27,5 @@ Once the application MCU code is uploaded to the ESP, the web application code c
 
 # Screen shots
 
-<img src='doc/diode-readings.png' style='width:200px'>
-<img src='doc/led-settings.png' style='width:200px'>
+<img src='doc/diode-readings.png'>
+<img src='doc/led-settings.png'>
