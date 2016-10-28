@@ -1,17 +1,10 @@
 
 
-declare var require;
 var d3 = require("d3-selection");
-// var $ = require("jquery");
 import {ctrl} from "./ctrl";
 import {Led} from "./led"
 import {Diode} from "./diode"
-
-class Options
-{
-	rule: string;
-	priority: number;
-}
+import * as d3t from "d3-selection"
 
 export class UI
 {
@@ -19,18 +12,13 @@ export class UI
 	currentTab = 1;
 	connectBtn;
 	consoleDiv;
+
 	headers;
 	contents;
 	
-	diode;
-	led;
+	diode: Diode;
+	led: Led;
 
-
-	show(name:string, opt:Options)
-	{
-
-	}
-	
 	init(root)
 	{
 

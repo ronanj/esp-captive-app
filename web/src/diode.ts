@@ -1,6 +1,4 @@
 
-declare var require;
-var d3 = require("d3-selection");
 import {ctrl} from "./ctrl"
 
 function pad(pad, str, padLeft=true) {

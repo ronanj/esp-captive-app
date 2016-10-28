@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-  	app: path.resolve(__dirname)+"/src/app.ts",
+  	app: path.resolve(__dirname+"/src/")+"/app.ts",
   },
   output: {
     path: path.resolve(__dirname+"/../data/"),

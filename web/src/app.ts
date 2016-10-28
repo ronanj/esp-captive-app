@@ -1,4 +1,3 @@
-declare var require;
 
 import {ui} from "./ui"
 
