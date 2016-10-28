@@ -15,5 +15,6 @@ clean:
 	rm -rf node_modules
 
 node_modules:
+	npm up -g npm
 	npm install
 
