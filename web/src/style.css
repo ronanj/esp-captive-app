@@ -51,7 +51,7 @@ body  {
 }
 
 .title {
-	margin: 10px 0;
+	margin: 20px 0;
     font-size: 150%;
     font-weight: bolder;
     color: #444;
@@ -93,5 +93,17 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 0.9;
     width: 30px;
     height: 36px;
+}
+
+#input-R::-webkit-slider-thumb {
+    background-color: #f00;
+}
+
+#input-G::-webkit-slider-thumb {
+    background-color: #0f0;
+}
+
+#input-B::-webkit-slider-thumb {
+    background-color: #00f;
 }
 

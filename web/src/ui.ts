@@ -23,7 +23,7 @@ export class UI
 
 		let tabs = [0,1,2];
 
-		let names = ["ConsoleX","Diode","Lights"];
+		let names = ["Console","Diode","Lights"];
 
 		this.headers = d3.select(root)
 			.append("div")

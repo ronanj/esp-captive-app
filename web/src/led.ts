@@ -10,14 +10,12 @@ export class Led
 
 	constructor(div) {
 
-		console.log("LED");
-
 		div = div
 			.append("center")
 			.attr("margin-top","20px")
 		div.append("div")
 			.attr("class","title")
-			.html("LED Settings")
+			.html("Gizwits Led Settings")
 
 		this.color = div
 			.append("div")
@@ -49,6 +47,7 @@ export class Led
 					.attr("type","range")
 					.attr("min",0)
 					.attr("max",255)
+					.attr("id","input-"+n)
 					.style("width","80%")
 					.style("margin","30px 0")
 					.on("input",function(){

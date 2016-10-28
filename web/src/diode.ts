@@ -24,7 +24,7 @@ export class Diode
 			.attr("margin-top","20px")
 		div.append("div")
 			.attr("class","title")
-			.html("Diode Readings")
+			.html("Gizwits Diode Readings")
 
 		this.val = div
 			.append("div")
@@ -35,19 +35,17 @@ export class Diode
 			.append("pre")
 			.style("font-size","80%")
 			.html("-");
+
 	}
 
 	start()
 	{
 		this.requests =true;
 		ctrl.request("diode:");
-		console.log("start");
-
 	}
 
 	stop() {
 		this.requests = false;
-		console.log("stop");
 	}
 
 	update(val) {
