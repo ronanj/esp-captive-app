@@ -6,7 +6,7 @@ module.exports = {
   	app: path.resolve(__dirname+"/src/")+"/app.ts",
   },
   output: {
-    path: path.resolve(__dirname+"/../data/"),
+    path: path.resolve(__dirname+"/../mcu/data/"),
     filename: 'bundle.js', 
     libraryTarget: "var",
     library: "app",

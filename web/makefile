@@ -6,7 +6,7 @@ build: install
 	@webpack
 
 upload:
-	make -C .. upload-web
+	make -C ../mcu upload-web
 
 install: node_modules
 	@echo "Install ok"
