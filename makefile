@@ -1,34 +1,25 @@
 
-all: install build upload-web upload-mcu console
+all: install build 
+	make -C mcu upload
 	@echo "done"
 
 
 
-upload-mcu: build-mcu
-	pio run -t upload
-
-upload-web: build-web
-	pio run -t uploadfs
-
-
 build: build-mcu build-web
 
-build-mcu: install
-	pio run
+build-mcu:
+	make -C mcu build	
 
 build-web:
 	make -C web build	
 
 
-console:
-	pio serialports monitor -b 115200
 
 
 install: install-mcu install-web
 
 install-mcu:
-	pio lib install ESPAsyncWebServer
-	pio lib install WiFiManager
+	make -C mcu install
 
 install-web: 
 	make -C web install
@@ -36,5 +27,5 @@ install-web:
 
 
 clean:
-	rm -rf .pioenvs .piolibdeps
+	make -C mcu clean
 	make -C web clean
